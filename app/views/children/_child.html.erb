@@ -1,0 +1,7 @@
+<div>
+  <div class="name" style="display: inline-block; width: 200px">
+    <%= child.name %>
+  </div>
+  <%= link_to 'Remove', [child.parent, child], :confirm => 'Really remove child?', :method => :delete %>
+</div>
+

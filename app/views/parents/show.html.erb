@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @parent.name %>
+</p>
+
+<h2>Children</h2>
+<div class="children">
+<%= render @parent.children %>
+</div>
+
+<h3>Add child</h3>
+<div id="new_child"></div>
+<%= link_to "Add a child", new_parent_child_path(@parent), :remote => true, :class => 'addChild' %>
+<br />
+<br />
+<%= link_to 'Edit', edit_parent_path(@parent) %> |
+<%= link_to 'Back', parents_path %>

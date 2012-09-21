@@ -1,0 +1,4 @@
+var child_row = $('<%= j(render(:partial => @child))%>');
+$('.children').append(child_row)
+$('.addChild').show();
+$('#new_child').empty();
